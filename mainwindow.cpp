@@ -220,16 +220,6 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         map2.push_back(cv::Point2f(x_left2, y_left2));
         map.push_back(QPoint(event->x(), event->y()));
     }
-    // qDebug() << "map1 coordinates:";
-    // for (const auto &point : map1)
-    // {
-    //     qDebug() << "(" << point.x << "," << point.y << ")";
-    // }
 
-    // qDebug() << "map2 coordinates:";
-    // for (const auto &point : map2)
-    // {
-    //     qDebug() << "(" << point.x << "," << point.y << ")";
-    // }
     update(); // 更新界面，重新绘制
 }

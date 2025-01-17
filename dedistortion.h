@@ -23,18 +23,17 @@ public:
     ~dedistortionImageWindow();
 
 private slots:
-    void onSelectInfraredImagePathClicked();                                                
-    void onImportCompleted();                                                               
-    void dedis_image(QString visibleImagePath, std::string intrinsics, std::string number); 
+    void onSelectInfraredImagePathClicked();
+    void onImportCompleted();
+    void dedis_image(QString visibleImagePath, std::string intrinsics, std::string number);
     void onSelectVisibleImagePathClicked();
-    void ReadImage(const std::string &input_dir, std::vector<cv::Mat> &images);             
-    bool OpenCV_Stitching(std::vector<cv::Mat> total_images, cv::Mat &result);              
-    void Stitching_main(std::string distort_path);                                          
+    void ReadImage(const std::string &input_dir, std::vector<cv::Mat> &images);
+    bool OpenCV_Stitching(std::vector<cv::Mat> total_images, cv::Mat &result);
+    void Stitching_main(std::string distort_path);
 
 private:
     // 按钮和标签
-    QPushButton *chooseVisibleImageButton;
-    QPushButton *chooseInfraredImageButton, *importCompletedButton;
+    QPushButton *chooseVisibleImageButton, *chooseInfraredImageButton, *importCompletedButton;
     QLabel *visibleImagePathLabel1, *visibleImagePathLabel2, *visibleImagePathLabel3, *visibleImagePathLabel4;
     QLabel *infraredImagePathLabel;
 
