@@ -3,15 +3,7 @@
 #include <QApplication>
 #include "common.h"
 dedistortionImageWindow::dedistortionImageWindow(QWidget *parent)
-    : QWidget(parent),
-      chooseVisibleImageButton(new QPushButton("选择可见光图片路径", this)),
-      chooseInfraredImageButton(new QPushButton("选择红外图片路径", this)),
-      importCompletedButton(new QPushButton("导入完成", this)),
-      visibleImagePathLabel1(new QLabel("未选择可见光图片1路径", this)),
-      visibleImagePathLabel2(new QLabel("未选择可见光图片2路径", this)),
-      visibleImagePathLabel3(new QLabel("未选择可见光图片3路径", this)),
-      visibleImagePathLabel4(new QLabel("未选择可见光图片4路径", this)),
-      infraredImagePathLabel(new QLabel("未选择红外图片路径", this))
+    : QWidget(parent)
       
 {
     initUI();

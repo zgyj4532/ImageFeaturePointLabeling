@@ -5,8 +5,6 @@ MainWindow::MainWindow(const QString &visibleImgPath, const QString &infraredImg
                                           ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    // infraredImgPath = "/home/crayzamb/projects/qt/qt_point_label/img1.bmp";
-    // visibleImgPath = "/home/crayzamb/projects/qt/qt_point_label/img2.bmp";
     int button_width=300;
     int button_height=180;
     this->resize(2560, 1440);

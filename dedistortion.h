@@ -23,13 +23,13 @@ public:
     ~dedistortionImageWindow();
 
 private slots:
-    void onSelectInfraredImagePathClicked();                                                // 当选择红外图片路径按钮被点击时
-    void onImportCompleted();                                                               // 当点击导入完成按钮时跳转到主界面
-    void dedis_image(QString visibleImagePath, std::string intrinsics, std::string number); // 加载图片
+    void onSelectInfraredImagePathClicked();                                                
+    void onImportCompleted();                                                               
+    void dedis_image(QString visibleImagePath, std::string intrinsics, std::string number); 
     void onSelectVisibleImagePathClicked();
-    void ReadImage(const std::string &input_dir, std::vector<cv::Mat> &images);             // 读取并检查图片
-    bool OpenCV_Stitching(std::vector<cv::Mat> total_images, cv::Mat &result);              // 拼接图片
-    void Stitching_main(std::string distort_path);                                          // 拼接主函数
+    void ReadImage(const std::string &input_dir, std::vector<cv::Mat> &images);             
+    bool OpenCV_Stitching(std::vector<cv::Mat> total_images, cv::Mat &result);              
+    void Stitching_main(std::string distort_path);                                          
 
 private:
     // 按钮和标签
